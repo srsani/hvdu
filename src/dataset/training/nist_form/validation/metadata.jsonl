@@ -1,0 +1,199 @@
+{"file_name": "f0639_24.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"June 30, 1989\", \"CITY\": \"South Gate\", \"STATE\": \"CA\", \"ZIP\": \"90280\"}}"}
+{"file_name": "f0814_03.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-23-89\", \"CITY\": \"Tonawanda\", \"STATE\": \"N.y\", \"ZIP\": \"14150\"}}"}
+{"file_name": "f1641_09.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/16/89\", \"CITY\": \"Great Falls\", \"STATE\": \"MT.\", \"ZIP\": \"59401\"}}"}
+{"file_name": "f0643_23.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/16/89\", \"CITY\": \"PHILA.\", \"STATE\": \"PA\", \"ZIP\": \"19121\"}}"}
+{"file_name": "f0067_25_22.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"None\", \"CITY\": \"None\", \"STATE\": \"None\", \"ZIP\": \"None\"}}"}
+{"file_name": "f1598_49.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"Sept.16/89\", \"CITY\": \"Dallas\", \"STATE\": \"Tx.\", \"ZIP\": \"75217\"}}"}
+{"file_name": "f0321_36.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-07-89\", \"CITY\": \"OVIEDO\", \"STATE\": \"FL\", \"ZIP\": \"32765\"}}"}
+{"file_name": "f2018_05.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-15-89\", \"CITY\": \"FORT COLLINS\", \"STATE\": \"CO.\", \"ZIP\": \"80521\"}}"}
+{"file_name": "f0396_05.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/09/89\", \"CITY\": \"COARSEgold\", \"STATE\": \"CA\", \"ZIP\": \"93614\"}}"}
+{"file_name": "f1276_10.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-25-89\", \"CITY\": \"Spencer\", \"STATE\": \"NC\", \"ZIP\": \"28159\"}}"}
+{"file_name": "f1251_10.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-26-89\", \"CITY\": \"ELK Grove Village\", \"STATE\": \"Il.\", \"ZIP\": \"60007\"}}"}
+{"file_name": "f0255_48.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-08-89\", \"CITY\": \"Fircrest\", \"STATE\": \"Wa\", \"ZIP\": \"98446\"}}"}
+{"file_name": "f1299_42.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/23/89\", \"CITY\": \"Orangeburg\", \"STATE\": \"S.C\", \"ZIP\": \"29115\"}}"}
+{"file_name": "f0787_21.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-12-89\", \"CITY\": \"TAMPA\", \"STATE\": \"Fl.\", \"ZIP\": \"33612\"}}"}
+{"file_name": "f1871_04.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/21/89\", \"CITY\": \"Joplin\", \"STATE\": \"MO\", \"ZIP\": \"64804\"}}"}
+{"file_name": "f1212_39.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/28/89\", \"CITY\": \"Ithaca\", \"STATE\": \"N.Y.\", \"ZIP\": \"14850\"}}"}
+{"file_name": "f0279_03.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/08/89\", \"CITY\": \"Redmond\", \"STATE\": \"WA\", \"ZIP\": \"98052\"}}"}
+{"file_name": "f0592_11.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-11-89\", \"CITY\": \"LaSVegas\", \"STATE\": \"Nevada\", \"ZIP\": \"89104\"}}"}
+{"file_name": "f1902_10.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-20-89\", \"CITY\": \"HOPE\", \"STATE\": \"AR\", \"ZIP\": \"71801\"}}"}
+{"file_name": "f0356_41.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-8-89\", \"CITY\": \"Panorama\", \"STATE\": \"CA\", \"ZIP\": \"91402\"}}"}
+{"file_name": "f0609_12.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"13 AUG 89\", \"CITY\": \"LEMOORE\", \"STATE\": \"CA\", \"ZIP\": \"93245\"}}"}
+{"file_name": "f0620_49.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-14-89\", \"CITY\": \"Caldwell\", \"STATE\": \"Idaho\", \"ZIP\": \"83605\"}}"}
+{"file_name": "f0470_37.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-09-89\", \"CITY\": \"UPLAND\", \"STATE\": \"CALIFORNIA\", \"ZIP\": \"91786\"}}"}
+{"file_name": "f0839_37.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"Aug. 19, 1989\", \"CITY\": \"Hammond\", \"STATE\": \"IN\", \"ZIP\": \"46324\"}}"}
+{"file_name": "f0165_04.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-7-89\", \"CITY\": \"Pell City\", \"STATE\": \"Al\", \"ZIP\": \"35125\"}}"}
+{"file_name": "f2087_13.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"10-01-89\", \"CITY\": \"OgdeN\", \"STATE\": \"IOWA\", \"ZIP\": \"50212\"}}"}
+{"file_name": "f1920_09.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"19 Sept 1989\", \"CITY\": \"Layton\", \"STATE\": \"Utah\", \"ZIP\": \"84046\"}}"}
+{"file_name": "f1340_02.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-28-89\", \"CITY\": \"RANDOLPH\", \"STATE\": \"MASS\", \"ZIP\": \"02368\"}}"}
+{"file_name": "f0984_25.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/23/89\", \"CITY\": \"ROWLAND\", \"STATE\": \"N. C.\", \"ZIP\": \"28383\"}}"}
+{"file_name": "f1474_13.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-15-89\", \"CITY\": \"GARLANd\", \"STATE\": \"TX\", \"ZIP\": \"75044\"}}"}
+{"file_name": "f0336_37.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-05-89\", \"CITY\": \"HUDSON\", \"STATE\": \"FL\", \"ZIP\": \"34669\"}}"}
+{"file_name": "f0900_42.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"August 21,1989\", \"CITY\": \"Plainfield\", \"STATE\": \"IN\", \"ZIP\": \"46168\"}}"}
+{"file_name": "f0343_35.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/04/1989\", \"CITY\": \"GAINESVille\", \"STATE\": \"GA\", \"ZIP\": \"30501\"}}"}
+{"file_name": "f0272_13.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-5-89\", \"CITY\": \"CAPECORAL\", \"STATE\": \"FL\", \"ZIP\": \"33914\"}}"}
+{"file_name": "f0307_12.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-11-89\", \"CITY\": \"Portland\", \"STATE\": \"Or\", \"ZIP\": \"97230\"}}"}
+{"file_name": "f2007_45.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"Sept.23\", \"CITY\": \"Clarkston\", \"STATE\": \"Utah\", \"ZIP\": \"84305\"}}"}
+{"file_name": "f0216_26.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-04-89\", \"CITY\": \"Valdosta\", \"STATE\": \"GA\", \"ZIP\": \"31602\"}}"}
+{"file_name": "f0861_29.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-22-89\", \"CITY\": \"New Alexandria\", \"STATE\": \"PA\", \"ZIP\": \"15670\"}}"}
+{"file_name": "f0076_06.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/8/89\", \"CITY\": \"HOLLAND\", \"STATE\": \"OH.\", \"ZIP\": \"43528\"}}"}
+{"file_name": "f1355_03.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-29-89\", \"CITY\": \"BEDFORD\", \"STATE\": \"INDIANA\", \"ZIP\": \"47421\"}}"}
+{"file_name": "f1319_00.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/22/89\", \"CITY\": \"E. SANDWICH\", \"STATE\": \"MA\", \"ZIP\": \"02537\"}}"}
+{"file_name": "f1615_41.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-18-89\", \"CITY\": \"MARKSVILLE\", \"STATE\": \"LA\", \"ZIP\": \"71351\"}}"}
+{"file_name": "f0699_19.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/17/89\", \"CITY\": \"Hydes\", \"STATE\": \"MaRyLAND\", \"ZIP\": \"21082\"}}"}
+{"file_name": "f0993_30.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/21/89\", \"CITY\": \"Plymouth\", \"STATE\": \"In.\", \"ZIP\": \"46563\"}}"}
+{"file_name": "f0577_19.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"August 14 1989\", \"CITY\": \"Los Angeles\", \"STATE\": \"California\", \"ZIP\": \"90020\"}}"}
+{"file_name": "f0558_01.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"07-07-89\", \"CITY\": \"DUNNELLON\", \"STATE\": \"FL\", \"ZIP\": \"32630\"}}"}
+{"file_name": "f0862_25.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-15-89\", \"CITY\": \"WILDWOOD\", \"STATE\": \"NJ\", \"ZIP\": \"08260\"}}"}
+{"file_name": "f1338_02.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/29/89\", \"CITY\": \"WASHINGTON\", \"STATE\": \"DC\", \"ZIP\": \"20011\"}}"}
+{"file_name": "f1745_36.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/16/89\", \"CITY\": \"BISMARCK\", \"STATE\": \"ND\", \"ZIP\": \"58504\"}}"}
+{"file_name": "f0598_49.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/12/89\", \"CITY\": \"Los ANGELES\", \"STATE\": \"CA\", \"ZIP\": \"90042\"}}"}
+{"file_name": "f0329_34.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-5-89\", \"CITY\": \"Birmingham\", \"STATE\": \"AL\", \"ZIP\": \"35204\"}}"}
+{"file_name": "f1886_18.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/21/89\", \"CITY\": \"Union Grove\", \"STATE\": \"Wi.\", \"ZIP\": \"53182\"}}"}
+{"file_name": "f2085_02.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"10/04/89\", \"CITY\": \"EAGAN,\", \"STATE\": \"MN.\", \"ZIP\": \"55122\"}}"}
+{"file_name": "f1403_42.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/8/89\", \"CITY\": \"Emporia,\", \"STATE\": \"Va.\", \"ZIP\": \"23847\"}}"}
+{"file_name": "f0663_30.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/04/89\", \"CITY\": \"KilleN\", \"STATE\": \"Al\", \"ZIP\": \"35645\"}}"}
+{"file_name": "f1879_44.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/21/89\", \"CITY\": \"JENNINGS\", \"STATE\": \"mo.\", \"ZIP\": \"63136\"}}"}
+{"file_name": "f0019_38.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-2-89\", \"CITY\": \"MILFORD\", \"STATE\": \"MICHIGAN\", \"ZIP\": \"48042\"}}"}
+{"file_name": "f0407_39.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-8-89\", \"CITY\": \"HUNTINGTON BEACH\", \"STATE\": \"CA\", \"ZIP\": \"92646\"}}"}
+{"file_name": "f0770_45.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/15/89\", \"CITY\": \"PHILA\", \"STATE\": \"PA\", \"ZIP\": \"19122\"}}"}
+{"file_name": "f1658_04.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/18/89\", \"CITY\": \"FT. COLLINS\", \"STATE\": \"Co.\", \"ZIP\": \"80524\"}}"}
+{"file_name": "f1435_38.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/22/1989\", \"CITY\": \"DULUTH\", \"STATE\": \"MN\", \"ZIP\": \"55808\"}}"}
+{"file_name": "f1708_22.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-18-89\", \"CITY\": \"Norfolk\", \"STATE\": \"NE\", \"ZIP\": \"68701\"}}"}
+{"file_name": "f0394_00.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/9/89\", \"CITY\": \"Madera\", \"STATE\": \"CALif\", \"ZIP\": \"93638\"}}"}
+{"file_name": "f1205_25.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"Aug 24,89\", \"CITY\": \"Searsmont\", \"STATE\": \"ME\", \"ZIP\": \"04973\"}}"}
+{"file_name": "f0219_48.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-08-89\", \"CITY\": \"OCEANSIDE\", \"STATE\": \"CA\", \"ZIP\": \"92056\"}}"}
+{"file_name": "f0807_16.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/14/89\", \"CITY\": \"Phila\", \"STATE\": \"Pa\", \"ZIP\": \"19154\"}}"}
+{"file_name": "f1086_15.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"August 24\", \"CITY\": \"Barton\", \"STATE\": \"Maryland\", \"ZIP\": \"21521\"}}"}
+{"file_name": "f0685_40.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-17-89\", \"CITY\": \"Whitaker\", \"STATE\": \"Pa\", \"ZIP\": \"15120\"}}"}
+{"file_name": "f0418_21.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"AUGUST 9,1989\", \"CITY\": \"VAN NUYS\", \"STATE\": \"CA\", \"ZIP\": \"91411\"}}"}
+{"file_name": "f1932_09.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/25/89\", \"CITY\": \"NEW CARRILLTON\", \"STATE\": \"Md.\", \"ZIP\": \"20784\"}}"}
+{"file_name": "f0067_25_43.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"None\", \"CITY\": \"None\", \"STATE\": \"None\", \"ZIP\": \"None\"}}"}
+{"file_name": "f0447_21.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-7-89\", \"CITY\": \"DAYTON\", \"STATE\": \"OHIO\", \"ZIP\": \"45459\"}}"}
+{"file_name": "f1751_08.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-14-89\", \"CITY\": \"Phoenix\", \"STATE\": \"Arizona\", \"ZIP\": \"85022\"}}"}
+{"file_name": "f1440_10.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/21/89\", \"CITY\": \"DULUTH\", \"STATE\": \"MN.\", \"ZIP\": \"55808\"}}"}
+{"file_name": "f0893_25.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/21/89\", \"CITY\": \"WABASH\", \"STATE\": \"INDIANA\", \"ZIP\": \"46992\"}}"}
+{"file_name": "f2053_20.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-30-1989\", \"CITY\": \"Madison\", \"STATE\": \"Wi\", \"ZIP\": \"53711\"}}"}
+{"file_name": "f0635_33.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/16/89\", \"CITY\": \"minotola\", \"STATE\": \"NJ\", \"ZIP\": \"08341\"}}"}
+{"file_name": "f1812_15.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-16-89\", \"CITY\": \"VIDOR\", \"STATE\": \"TX\", \"ZIP\": \"77662\"}}"}
+{"file_name": "f1099_37.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-20-89\", \"CITY\": \"WIMAUMA\", \"STATE\": \"FL.\", \"ZIP\": \"33598\"}}"}
+{"file_name": "f0800_00.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-20-89\", \"CITY\": \"Emmaus,\", \"STATE\": \"Pa.\", \"ZIP\": \"18049\"}}"}
+{"file_name": "f0067_25_27.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"None\", \"CITY\": \"None\", \"STATE\": \"None\", \"ZIP\": \"None\"}}"}
+{"file_name": "f0650_31.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-16-89\", \"CITY\": \"Pittsburgh\", \"STATE\": \"PA\", \"ZIP\": \"15239\"}}"}
+{"file_name": "f0067_25_33.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"None\", \"CITY\": \"None\", \"STATE\": \"None\", \"ZIP\": \"None\"}}"}
+{"file_name": "f0213_49.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-10-89\", \"CITY\": \"Dayton\", \"STATE\": \"WA\", \"ZIP\": \"99328\"}}"}
+{"file_name": "f0067_25_34.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"None\", \"CITY\": \"None\", \"STATE\": \"None\", \"ZIP\": \"None\"}}"}
+{"file_name": "f2097_31.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9.25.89\", \"CITY\": \"Belgrade\", \"STATE\": \"Mt\", \"ZIP\": \"59714\"}}"}
+{"file_name": "f1963_27.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/25/89\", \"CITY\": \"Madison\", \"STATE\": \"WI\", \"ZIP\": \"53711\"}}"}
+{"file_name": "f1033_07.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"august 24,1989\", \"CITY\": \"NORFOLK\", \"STATE\": \"VA.\", \"ZIP\": \"23503\"}}"}
+{"file_name": "f0305_08.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/6/89\", \"CITY\": \"Bolivar\", \"STATE\": \"TN\", \"ZIP\": \"38008\"}}"}
+{"file_name": "f1035_22.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-23-89\", \"CITY\": \"PITTSFORD\", \"STATE\": \"NEW YORK\", \"ZIP\": \"14534\"}}"}
+{"file_name": "f0331_41.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-08-89\", \"CITY\": \"ChaGRIN Falls\", \"STATE\": \"Ohio\", \"ZIP\": \"44022\"}}"}
+{"file_name": "f1047_26.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-24-89\", \"CITY\": \"W.CHESTERFIELD\", \"STATE\": \"NH\", \"ZIP\": \"03466\"}}"}
+{"file_name": "f1663_13.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"Sept. 15, 1989\", \"CITY\": \"Wheatridge\", \"STATE\": \"Co.\", \"ZIP\": \"80033\"}}"}
+{"file_name": "f0695_31.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/14/89\", \"CITY\": \"Clearlake\", \"STATE\": \"CA\", \"ZIP\": \"95422\"}}"}
+{"file_name": "f1916_32.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-20-89\", \"CITY\": \"KANSAS City\", \"STATE\": \"Ks\", \"ZIP\": \"66109\"}}"}
+{"file_name": "f0630_16.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/15/89\", \"CITY\": \"UNIONTOWN\", \"STATE\": \"PA\", \"ZIP\": \"15401\"}}"}
+{"file_name": "f1022_17.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-24-89\", \"CITY\": \"Willow Hill\", \"STATE\": \"R\", \"ZIP\": \"62480\"}}"}
+{"file_name": "f0423_04.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/18/1989\", \"CITY\": \"cypress\", \"STATE\": \"CA\", \"ZIP\": \"90630\"}}"}
+{"file_name": "f1847_26.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/21/89\", \"CITY\": \"Topeka\", \"STATE\": \"Kansas\", \"ZIP\": \"66614\"}}"}
+{"file_name": "f0831_15.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-19-89\", \"CITY\": \"South Bend\", \"STATE\": \"In.\", \"ZIP\": \"46615\"}}"}
+{"file_name": "f1451_24.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-21-89\", \"CITY\": \"Elkhart Lake\", \"STATE\": \"Wi\", \"ZIP\": \"53020\"}}"}
+{"file_name": "f1797_27.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-21-89\", \"CITY\": \"BARABOO\", \"STATE\": \"WI\", \"ZIP\": \"53913\"}}"}
+{"file_name": "f0086_47.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/9/89\", \"CITY\": \"Castro Valley\", \"STATE\": \"CA\", \"ZIP\": \"94546\"}}"}
+{"file_name": "f1399_06.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/01/89\", \"CITY\": \"WASHINGTON\", \"STATE\": \"DC\", \"ZIP\": \"20817\"}}"}
+{"file_name": "f0873_42.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/22/89\", \"CITY\": \"Camby\", \"STATE\": \"In.\", \"ZIP\": \"46113\"}}"}
+{"file_name": "f1147_19.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/25/89\", \"CITY\": \"Cheshire\", \"STATE\": \"CT\", \"ZIP\": \"06410\"}}"}
+{"file_name": "f0359_05.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"AUGUST 4, 1989\", \"CITY\": \"DETROIT\", \"STATE\": \"MI\", \"ZIP\": \"48228\"}}"}
+{"file_name": "f1761_43.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"SEPT. 20,1989\", \"CITY\": \"BILLINGS\", \"STATE\": \"MT\", \"ZIP\": \"59101\"}}"}
+{"file_name": "f0495_04.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/10/89\", \"CITY\": \"SANTA MARIA\", \"STATE\": \"CA.\", \"ZIP\": \"93454\"}}"}
+{"file_name": "f1776_35.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-22-89\", \"CITY\": \"MINNETONKA\", \"STATE\": \"MN\", \"ZIP\": \"55343\"}}"}
+{"file_name": "f1001_28.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/21/89\", \"CITY\": \"MounTain Top\", \"STATE\": \"Pa\", \"ZIP\": \"18707\"}}"}
+{"file_name": "f1701_10.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-16-89\", \"CITY\": \"Sheridan\", \"STATE\": \"Wy\", \"ZIP\": \"82801\"}}"}
+{"file_name": "f1330_35.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/23/89\", \"CITY\": \"Colchester\", \"STATE\": \"Ct.\", \"ZIP\": \"06415\"}}"}
+{"file_name": "f1596_10.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"10-15-89\", \"CITY\": \"Ft. WoRtH\", \"STATE\": \"TX\", \"ZIP\": \"76140\"}}"}
+{"file_name": "f0697_31.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-17-89\", \"CITY\": \"BRADFORD\", \"STATE\": \"PA.\", \"ZIP\": \"16701\"}}"}
+{"file_name": "f0275_17.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/8/89\", \"CITY\": \"OLympia\", \"STATE\": \"WA\", \"ZIP\": \"98501\"}}"}
+{"file_name": "f0969_31.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/25/89\", \"CITY\": \"ADVANCE\", \"STATE\": \"NC\", \"ZIP\": \"27006\"}}"}
+{"file_name": "f0832_40.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-20-89\", \"CITY\": \"SPARTA\", \"STATE\": \"NJ\", \"ZIP\": \"07871\"}}"}
+{"file_name": "f2081_42.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/24/89\", \"CITY\": \"CASPER\", \"STATE\": \"WYOMING\", \"ZIP\": \"82609\"}}"}
+{"file_name": "f1429_14.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/21/89\", \"CITY\": \"Brooklyn Center\", \"STATE\": \"Mn\", \"ZIP\": \"55429\"}}"}
+{"file_name": "f0400_25.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/09/89\", \"CITY\": \"Eufaula\", \"STATE\": \"AL\", \"ZIP\": \"36027\"}}"}
+{"file_name": "f0067_25_5.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"None\", \"CITY\": \"None\", \"STATE\": \"None\", \"ZIP\": \"None\"}}"}
+{"file_name": "f1581_39.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/17/89\", \"CITY\": \"Houston\", \"STATE\": \"TX\", \"ZIP\": \"77014\"}}"}
+{"file_name": "f0381_28.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-6-89\", \"CITY\": \"Knoxville\", \"STATE\": \"Tn\", \"ZIP\": \"37923\"}}"}
+{"file_name": "f1414_16.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/06/89\", \"CITY\": \"NARRAGANSETT\", \"STATE\": \"RI\", \"ZIP\": \"02883\"}}"}
+{"file_name": "f0917_11.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/21/89\", \"CITY\": \"WESTLAND\", \"STATE\": \"micH\", \"ZIP\": \"48185\"}}"}
+{"file_name": "f0106_05.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/6/89\", \"CITY\": \"Cincinnati\", \"STATE\": \"oh\", \"ZIP\": \"45229\"}}"}
+{"file_name": "f0544_05.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"Aug. 10,1989\", \"CITY\": \"LAGUNA NIGUEL\", \"STATE\": \"CA\", \"ZIP\": \"92677\"}}"}
+{"file_name": "f0689_06.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-18-89\", \"CITY\": \"AUDUBON\", \"STATE\": \"NJ\", \"ZIP\": \"08106\"}}"}
+{"file_name": "f1344_45.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-23-89\", \"CITY\": \"NORTHBORO\", \"STATE\": \"MA.\", \"ZIP\": \"01532\"}}"}
+{"file_name": "f1186_07.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/27/89\", \"CITY\": \"MALDEN\", \"STATE\": \"MA\", \"ZIP\": \"02148\"}}"}
+{"file_name": "f1942_21.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-25-89\", \"CITY\": \"Burnsville\", \"STATE\": \"NC\", \"ZIP\": \"28714\"}}"}
+{"file_name": "f1269_14.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/23/89\", \"CITY\": \"Asheville\", \"STATE\": \"NC\", \"ZIP\": \"28806\"}}"}
+{"file_name": "f0680_28.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-16-89\", \"CITY\": \"Davisville\", \"STATE\": \"W.Va.\", \"ZIP\": \"26142\"}}"}
+{"file_name": "f1391_35.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-28-89\", \"CITY\": \"WEST SENECA\", \"STATE\": \"NY\", \"ZIP\": \"14224\"}}"}
+{"file_name": "f0890_35.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/21/89\", \"CITY\": \"Chicago\", \"STATE\": \"Il.\", \"ZIP\": \"60615\"}}"}
+{"file_name": "f0683_02.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-12-89\", \"CITY\": \"HONOLULU\", \"STATE\": \"HAWAII\", \"ZIP\": \"96815\"}}"}
+{"file_name": "f1862_37.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-18-89\", \"CITY\": \"Mc PHERSON\", \"STATE\": \"KS\", \"ZIP\": \"67460\"}}"}
+{"file_name": "f0595_35.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/13/89\", \"CITY\": \"Bothell\", \"STATE\": \"WA\", \"ZIP\": \"98011\"}}"}
+{"file_name": "f0970_15.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-23-89\", \"CITY\": \"Greensboro\", \"STATE\": \"NC\", \"ZIP\": \"27406\"}}"}
+{"file_name": "f0687_43.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-17-89\", \"CITY\": \"ALTOONA\", \"STATE\": \"PA.\", \"ZIP\": \"16602\"}}"}
+{"file_name": "f1964_32.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-27-89\", \"CITY\": \"W. Des Moines\", \"STATE\": \"IA\", \"ZIP\": \"50265\"}}"}
+{"file_name": "f1431_47.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-22-89\", \"CITY\": \"Newton\", \"STATE\": \"IA\", \"ZIP\": \"50208\"}}"}
+{"file_name": "f0934_12.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-19-1989\", \"CITY\": \"Chicago\", \"STATE\": \"Il\", \"ZIP\": \"60620\"}}"}
+{"file_name": "f1161_00.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"28 aug. 89\", \"CITY\": \"Springfield\", \"STATE\": \"Va\", \"ZIP\": \"22153\"}}"}
+{"file_name": "f0702_46.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/17/89\", \"CITY\": \"Baltimore\", \"STATE\": \"MD\", \"ZIP\": \"21209\"}}"}
+{"file_name": "f1332_24.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-28-89\", \"CITY\": \"CLAYMONT\", \"STATE\": \"DE\", \"ZIP\": \"19703\"}}"}
+{"file_name": "f1520_07.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09.16.89\", \"CITY\": \"FT, SMITH\", \"STATE\": \"AR\", \"ZIP\": \"72903\"}}"}
+{"file_name": "f1240_01.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/24/89\", \"CITY\": \"Phila\", \"STATE\": \"PA.\", \"ZIP\": \"19151\"}}"}
+{"file_name": "f0424_27.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/9/89\", \"CITY\": \"EL CERRITO\", \"STATE\": \"CA\", \"ZIP\": \"94530\"}}"}
+{"file_name": "f0044_12.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08 03 89\", \"CITY\": \"TROY\", \"STATE\": \"Mi\", \"ZIP\": \"48098\"}}"}
+{"file_name": "f0693_40.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/18/89\", \"CITY\": \"CHICAGO\", \"STATE\": \"IL\", \"ZIP\": \"60613\"}}"}
+{"file_name": "f1571_13.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-16-89\", \"CITY\": \"Springer\", \"STATE\": \"NM\", \"ZIP\": \"87747\"}}"}
+{"file_name": "f0379_10.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-6-89\", \"CITY\": \"Millington\", \"STATE\": \"Michigan\", \"ZIP\": \"48746\"}}"}
+{"file_name": "f2003_18.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/17/89\", \"CITY\": \"PASADENA\", \"STATE\": \"Tx\", \"ZIP\": \"77502\"}}"}
+{"file_name": "f0824_18.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/19/89\", \"CITY\": \"PALmYRA\", \"STATE\": \"PA.\", \"ZIP\": \"17078\"}}"}
+{"file_name": "f0445_46.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-6-89\", \"CITY\": \"Madison\", \"STATE\": \"TN\", \"ZIP\": \"37115\"}}"}
+{"file_name": "f1377_09.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"Sept 5, 1989\", \"CITY\": \"Woodbridge\", \"STATE\": \"Ct\", \"ZIP\": \"06525\"}}"}
+{"file_name": "f0207_46.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/6/89\", \"CITY\": \"Leesburg,\", \"STATE\": \"FL\", \"ZIP\": \"34748\"}}"}
+{"file_name": "f1291_26.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/24/89\", \"CITY\": \"Blackstock\", \"STATE\": \"SC\", \"ZIP\": \"29014\"}}"}
+{"file_name": "f2077_16.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/29/89\", \"CITY\": \"Baton Rouge\", \"STATE\": \"LA\", \"ZIP\": \"70817\"}}"}
+{"file_name": "f1804_32.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/21/89\", \"CITY\": \"Red Wing\", \"STATE\": \"MN\", \"ZIP\": \"55066\"}}"}
+{"file_name": "f1828_25.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"Sept. 16, 1989\", \"CITY\": \"Gainesville\", \"STATE\": \"FL\", \"ZIP\": \"76240\"}}"}
+{"file_name": "f1164_21.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-25-89\", \"CITY\": \"Baldwinsville\", \"STATE\": \"NewYork\", \"ZIP\": \"13027\"}}"}
+{"file_name": "f1824_18.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-16-89\", \"CITY\": \"Palestine\", \"STATE\": \"Ar.\", \"ZIP\": \"72372\"}}"}
+{"file_name": "f1639_38.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-15-89\", \"CITY\": \"COLORADO SPRINGS\", \"STATE\": \"Co.\", \"ZIP\": \"80918\"}}"}
+{"file_name": "f0948_01.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/21/89\", \"CITY\": \"Scranton\", \"STATE\": \"Pa.\", \"ZIP\": \"18509\"}}"}
+{"file_name": "f1281_28.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/23/89\", \"CITY\": \"Louisville\", \"STATE\": \"Ky.\", \"ZIP\": \"40206\"}}"}
+{"file_name": "f1260_34.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-26-89\", \"CITY\": \"Glen Alpine\", \"STATE\": \"NC\", \"ZIP\": \"28628\"}}"}
+{"file_name": "f1176_40.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/24/89\", \"CITY\": \"Rochester\", \"STATE\": \"NY\", \"ZIP\": \"14624\"}}"}
+{"file_name": "f1409_25.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-6-89\", \"CITY\": \"Methuen\", \"STATE\": \"MA\", \"ZIP\": \"01844\"}}"}
+{"file_name": "f2092_41.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-16-89\", \"CITY\": \"AVAlon\", \"STATE\": \"miss\", \"ZIP\": \"38912\"}}"}
+{"file_name": "f0865_24.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-20-89\", \"CITY\": \"INDIANAPOLIS,\", \"STATE\": \"INDIANA\", \"ZIP\": \"46201\"}}"}
+{"file_name": "f1736_04.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-16-89\", \"CITY\": \"Phoenix\", \"STATE\": \"Az\", \"ZIP\": \"85021\"}}"}
+{"file_name": "f0591_27.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-13-89\", \"CITY\": \"St. Augustine\", \"STATE\": \"Florida\", \"ZIP\": \"32084\"}}"}
+{"file_name": "f0625_26.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/21/89\", \"CITY\": \"JACKSONVIlle\", \"STATE\": \"Fl\", \"ZIP\": \"32216\"}}"}
+{"file_name": "f0892_23.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-22-89\", \"CITY\": \"Chelmsford\", \"STATE\": \"MA\", \"ZIP\": \"01824\"}}"}
+{"file_name": "f0332_15.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/05/89\", \"CITY\": \"MANOR\", \"STATE\": \"Georgia\", \"ZIP\": \"31550\"}}"}
+{"file_name": "f2086_25.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"10/06/89\", \"CITY\": \"MILWAUKEE\", \"STATE\": \"Wi\", \"ZIP\": \"53217\"}}"}
+{"file_name": "f1003_41.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"AUG-22-89\", \"CITY\": \"DANVERS\", \"STATE\": \"MA\", \"ZIP\": \"01923\"}}"}
+{"file_name": "f0654_02.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-12-89\", \"CITY\": \"HAIKU - MAUI\", \"STATE\": \"HI.\", \"ZIP\": \"96708\"}}"}
+{"file_name": "f1563_24.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/16/89\", \"CITY\": \"New Orleans\", \"STATE\": \"LA\", \"ZIP\": \"70118\"}}"}
+{"file_name": "f0799_13.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"16 August'89\", \"CITY\": \"ALiQuippA\", \"STATE\": \"PA\", \"ZIP\": \"15001-4831\"}}"}
+{"file_name": "f1080_00.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/26/89\", \"CITY\": \"Plainville\", \"STATE\": \"MA\", \"ZIP\": \"02762\"}}"}
+{"file_name": "f0101_44.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/07/89\", \"CITY\": \"GReenback\", \"STATE\": \"TN\", \"ZIP\": \"37742\"}}"}
+{"file_name": "f1643_46.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-16-1989\", \"CITY\": \"Stuart\", \"STATE\": \"NE\", \"ZIP\": \"68780\"}}"}
+{"file_name": "f1363_19.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08-14-89\", \"CITY\": \"altamonte Springs\", \"STATE\": \"FI\", \"ZIP\": \"32714\"}}"}
+{"file_name": "f1912_13.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9-22-89\", \"CITY\": \"Fargo\", \"STATE\": \"North DAkota\", \"ZIP\": \"58103\"}}"}
+{"file_name": "f0113_31.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/09/89\", \"CITY\": \"LAS VEGAS\", \"STATE\": \"NV.\", \"ZIP\": \"89101\"}}"}
+{"file_name": "f0073_45.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/08/89\", \"CITY\": \"Fullerton\", \"STATE\": \"CA\", \"ZIP\": \"92633\"}}"}
+{"file_name": "f0112_07.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-9-89\", \"CITY\": \"Anchorage\", \"STATE\": \"Alaska\", \"ZIP\": \"99508\"}}"}
+{"file_name": "f1341_45.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"08/29/89\", \"CITY\": \"GRIFTON\", \"STATE\": \"NC\", \"ZIP\": \"28530\"}}"}
+{"file_name": "f1441_43.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"9/20/89\", \"CITY\": \"INDEPENDENCE\", \"STATE\": \"MO\", \"ZIP\": \"64055\"}}"}
+{"file_name": "f1898_09.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/22/89\", \"CITY\": \"PASADENA\", \"STATE\": \"TX\", \"ZIP\": \"77503\"}}"}
+{"file_name": "f1398_48.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09/01/89\", \"CITY\": \"Hancock\", \"STATE\": \"Maine\", \"ZIP\": \"04640\"}}"}
+{"file_name": "f0119_44.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-4-89\", \"CITY\": \"Holland\", \"STATE\": \"Mich\", \"ZIP\": \"49423\"}}"}
+{"file_name": "f1799_27.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"09-22-89\", \"CITY\": \"Two Rivers\", \"STATE\": \"Wi\", \"ZIP\": \"54241\"}}"}
+{"file_name": "f0197_34.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8/8/89\", \"CITY\": \"STEUBENVILLE\", \"STATE\": \"OHIO\", \"ZIP\": \"43952\"}}"}
+{"file_name": "f1369_36.png", "ground_truth": "{\"gt_parse\": {\"DATE\": \"8-28-89\", \"CITY\": \"Decatur\", \"STATE\": \"Illinois\", \"ZIP\": \"62521\"}}"}
