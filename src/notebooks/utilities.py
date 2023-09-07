@@ -352,5 +352,5 @@ def create_prompt(json1, json2, prefix_prompt, postfix_prompt, example_dict):
         prompt = f"{prompt} JSON2 = {value[1]}"
         prompt = f"{prompt} OUTPUT_JSON = {value[2]}"
     prompt = f"{prompt} {postfix_prompt}"
-    prompt = prompt = f"{prompt}  INPUT_JSONs: ```JSON1 = {json1}, JSON1 = {json2}```"
+    prompt = f"{prompt}  INPUT_JSONs: ```JSON1 = {json1}, JSON2 = {json2}```"
     return prompt

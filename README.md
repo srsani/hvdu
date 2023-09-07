@@ -24,7 +24,7 @@ Update the `train_nist`
 
 - `python test.py \
 --dataset_name_or_path  ./dataset/training/nist_form \
---pretrained_model_name_or_path ./result/train_nist/20230901_162511 \
+--pretrained_model_name_or_path ./result/train_nist/20230905_212956 \
 --save_path ./dataset/result/nist_form \
 --split test`
 

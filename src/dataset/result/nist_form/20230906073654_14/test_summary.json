@@ -1,0 +1,11 @@
+{
+    "split": "test",
+    "data": "./dataset/training/nist_form",
+    "model_name": "./result/train_nist/20230905_212956",
+    "fla": 54.0,
+    "CBA TOTAL FULL DATASET": 95.229,
+    "CBA DATE FULL DATASET": 99.0226,
+    "CBA CITY FULL DATASET": 91.761,
+    "CBA STATE FULL DATASET": 91.326,
+    "CBA ZIP FULL DATASET": 98.1867
+}

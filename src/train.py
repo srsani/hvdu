@@ -16,6 +16,7 @@ import numpy as np
 import pytorch_lightning as pl
 import torch
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
+from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 from pytorch_lightning.loggers.tensorboard import TensorBoardLogger
 from pytorch_lightning.plugins import CheckpointIO
 from pytorch_lightning.utilities import rank_zero_only
@@ -33,7 +34,8 @@ class CustomCheckpointIO(CheckpointIO):
     def load_checkpoint(self, path, storage_options=None):
         checkpoint = torch.load(path + "artifacts.ckpt")
         state_dict = torch.load(path + "pytorch_model.bin")
-        checkpoint["state_dict"] = {"model." + key: value for key, value in state_dict.items()}
+        checkpoint["state_dict"] = {
+            "model." + key: value for key, value in state_dict.items()}
         return checkpoint
 
     def remove_checkpoint(self, path) -> None:
@@ -60,19 +62,20 @@ def train(config):
     # add datasets to data_module
     datasets = {"train": [], "validation": []}
     for i, dataset_name_or_path in enumerate(config.dataset_name_or_paths):
-        task_name = os.path.basename(dataset_name_or_path)  # e.g., cord-v2, docvqa, rvlcdip, ...
-        
+        # e.g., cord-v2, docvqa, rvlcdip, ...
+        task_name = os.path.basename(dataset_name_or_path)
+
         # add categorical special tokens (optional)
         if task_name == "rvlcdip":
             model_module.model.decoder.add_special_tokens([
-                "<advertisement/>", "<budget/>", "<email/>", "<file_folder/>", 
-                "<form/>", "<handwritten/>", "<invoice/>", "<letter/>", 
-                "<memo/>", "<news_article/>", "<presentation/>", "<questionnaire/>", 
+                "<advertisement/>", "<budget/>", "<email/>", "<file_folder/>",
+                "<form/>", "<handwritten/>", "<invoice/>", "<letter/>",
+                "<memo/>", "<news_article/>", "<presentation/>", "<questionnaire/>",
                 "<resume/>", "<scientific_publication/>", "<scientific_report/>", "<specification/>"
             ])
         if task_name == "docvqa":
             model_module.model.decoder.add_special_tokens(["<yes/>", "<no/>"])
-            
+
         for split in ["train", "validation"]:
             datasets[split].append(
                 DonutDataset(
@@ -104,12 +107,19 @@ def train(config):
 
     checkpoint_callback = ModelCheckpoint(
         monitor="val_metric",
-        dirpath=Path(config.result_path) / config.exp_name / config.exp_version,
+        dirpath=Path(config.result_path) /
+        config.exp_name / config.exp_version,
         filename="artifacts",
         save_top_k=1,
         save_last=False,
         mode="min",
     )
+    
+    early_stop_callback = EarlyStopping(monitor="val_metric",
+                                        min_delta=0.00,
+                                        patience=3,
+                                        verbose=False,
+                                        mode="max")
 
     custom_ckpt = CustomCheckpointIO()
     trainer = pl.Trainer(
@@ -127,7 +137,7 @@ def train(config):
         precision=16,
         num_sanity_val_steps=0,
         logger=logger,
-        callbacks=[lr_callback, checkpoint_callback],
+        callbacks=[lr_callback, checkpoint_callback, early_stop_callback],
     )
 
     trainer.fit(model_module, data_module)
@@ -143,7 +153,9 @@ if __name__ == "__main__":
     config.argv_update(left_argv)
 
     config.exp_name = basename(args.config).split(".")[0]
-    config.exp_version = datetime.datetime.now().strftime("%Y%m%d_%H%M%S") if not args.exp_version else args.exp_version
+    config.exp_version = datetime.datetime.now().strftime(
+        "%Y%m%d_%H%M%S") if not args.exp_version else args.exp_version
 
-    save_config_file(config, Path(config.result_path) / config.exp_name / config.exp_version)
+    save_config_file(config, Path(config.result_path) /
+                     config.exp_name / config.exp_version)
     train(config)
