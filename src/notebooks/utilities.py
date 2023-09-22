@@ -50,7 +50,7 @@ Return a single json that it can be loaded using json.loads(YOUR_RESULT) in pyth
 """
 example_dict = {
     'example1':
-    [str({'DATE': '8-10-89', 'CITY': None, 'STATE': 'Sacramento Ca', 'ZIP': '95841'}),
+    [str({'DATE': '8-10-89', 'CITY': 'None', 'STATE': 'Sacramento Ca', 'ZIP': '95841'}),
      str({'DATE': '8-10-89', 'CITY': 'Sacrament',
           'STATE': 'None', 'ZIP': 'Ca95841'}),
      str({'DATE': 'Sacramento', 'CITY': 'Sacramento', 'STATE': 'Ca', 'ZIP': '95841'})],
