@@ -9,7 +9,7 @@ from sconf import Config
 from datasets import load_dataset
 import torch
 import time
-import evaluate
+# import evaluate
 import pandas as pd
 import numpy as np
 import ast
