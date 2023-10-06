@@ -1,3 +1,9 @@
+
+df1_path: "../dataset/raw/nist/azure_cleaned.csv"
+df2_path: "../dataset/raw/nist/aws_cleaned.csv"
+dataset_name_or_path: "../dataset/training/nist_form"
+model_name: "google/flan-t5-base"
+
 result_path: "./result"
 pretrained_model_name_or_path: "naver-clova-ix/donut-base"
 dataset_name_or_paths: ["dataset/training/nist_form/"]
