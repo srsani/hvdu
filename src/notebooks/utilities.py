@@ -378,3 +378,5 @@ def print_number_of_trainable_model_parameters(model):
     return f"""trainable model parameters: {trainable_model_params}
                 \nall model parameters: {all_model_params}
                 \npercentage of trainable model parameters: {100 * trainable_model_params / all_model_params:.2f}%"""
+
+
