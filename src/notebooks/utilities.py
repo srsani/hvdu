@@ -354,3 +354,27 @@ def create_prompt(json1, json2, prefix_prompt, postfix_prompt, example_dict):
     prompt = f"{prompt} {postfix_prompt}"
     prompt = f"{prompt}  INPUT_JSONs: ```JSON1 = {json1}, JSON2 = {json2}```"
     return prompt
+
+
+def print_number_of_trainable_model_parameters(model):
+    """
+    This function calculates and returns a formatted string containing the count of trainable
+    and total parameters in a given PyTorch model, along with the percentage of trainable parameters.
+
+    Args:
+    model (torch.nn.Module): The PyTorch model for which to calculate parameter counts.
+
+    Returns:
+    str: A formatted string containing the counts of trainable and total parameters,
+         and the percentage of trainable parameters.
+    """
+
+    trainable_model_params = 0
+    all_model_params = 0
+    for _, param in model.named_parameters():
+        all_model_params += param.numel()
+        if param.requires_grad:
+            trainable_model_params += param.numel()
+    return f"""trainable model parameters: {trainable_model_params}
+                \nall model parameters: {all_model_params}
+                \npercentage of trainable model parameters: {100 * trainable_model_params / all_model_params:.2f}%"""
