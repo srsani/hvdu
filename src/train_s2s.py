@@ -150,6 +150,11 @@ def train(config):
         callbacks=[EarlyStoppingCallback(early_stopping_patience=5)]
     )
 
+    if config.test:
+        print('Testing...')
+        peft_trainer.evaluate(tokenized_datasets["test"])
+        return True
+
     peft_trainer.train()
 
     return True
