@@ -6,6 +6,7 @@ MIT License
 import argparse
 from sconf import Config
 import json
+from tqdm import tqdm
 
 from datasets import load_dataset
 import torch
@@ -26,6 +27,10 @@ from transformers import (AutoModelForSeq2SeqLM,
 
 from notebooks.utilities import (print_number_of_trainable_model_parameters,
                                  init_json,
+                                 fix_string_v1,
+                                 fix_string_v2,
+                                 fix_string_v3,
+                                 fix_string_v4,
                                  )
 
 from peft import (LoraConfig,
@@ -126,10 +131,10 @@ def train(config):
     print(print_number_of_trainable_model_parameters(peft_model))
 
     print('Initialize Trainer...')
-    output_dir = f'../result/t5-lora-{str(int(time.time()))}'
-    print(f'model will the saved in: {output_dir}')
+    peft_model_path = f'./result/t5-peft-{str(int(time.time()))}'
+    print(f'model will the saved in: {peft_model_path}')
 
-    peft_training_args = TrainingArguments(output_dir=output_dir,
+    peft_training_args = TrainingArguments(output_dir=peft_model_path,
                                            auto_find_batch_size=True,
                                            learning_rate=1e-3,
                                            #     weight_decay=0.01,
@@ -150,12 +155,94 @@ def train(config):
         callbacks=[EarlyStoppingCallback(early_stopping_patience=5)]
     )
 
+    peft_trainer.train()
+
+    peft_trainer.model.save_pretrained(peft_model_path)
+    tokenizer.save_pretrained(peft_model_path)
+
+    pd.DataFrame(peft_trainer.state.log_history).to_csv(f'{peft_model_path}/log_history.csv',
+                                                        index=False)
+
     if config.test:
         print('Testing...')
-        peft_trainer.evaluate(tokenized_datasets["test"])
-        return True
 
-    peft_trainer.train()
+        peft_model_base = AutoModelForSeq2SeqLM.from_pretrained("google/flan-t5-base",
+                                                                device_map="auto",
+                                                                torch_dtype=torch.bfloat16)
+
+        peft_model = PeftModel.from_pretrained(peft_model_base,
+                                               peft_model_path,
+                                               torch_dtype=torch.bfloat16,
+                                               is_trainable=False)
+
+        print(print_number_of_trainable_model_parameters(peft_model))
+
+        dataset_ = dataset['test']
+
+        peft_trainer.evaluate(tokenized_datasets["test"])
+        ground_truth_list = []
+        result_list = []
+        error_list = []
+
+        for _, sample in tqdm(enumerate(dataset_), total=len(dataset_)):
+
+            file_path = sample['image'].filename
+            file_name = f"{file_path[file_path.rfind('/')+1: ]}"
+
+            ground_truth = json.loads(sample["ground_truth"])['gt_parse']
+            ground_truth['image_name'] = file_name
+            ground_truth_list.append(ground_truth)
+
+            df_1 = df1[df1.image_name == file_name]
+            df_2 = df2[df2.image_name == file_name]
+
+            # make sure they both JSONS have all the keys
+            json1 = init_json(df_1)
+            json2 = init_json(df_2)
+
+            prompt = f"""convert the two input JSONs delimited by triple backticks into one OUTPUT_JSON.
+
+                INPUT_JSONs: ```
+                JSON1 = {json1}, 
+                JSON2 = {json2}```
+                
+                OUTPUT_JSON = 
+                """
+
+            input_ids = tokenizer(
+                prompt, return_tensors="pt").input_ids.to('cuda')
+
+            instruct_model_outputs = peft_model.generate(input_ids=input_ids,
+                                                         generation_config=GenerationConfig(max_new_tokens=200,
+                                                                                            num_beams=2))
+            data_str = tokenizer.decode(instruct_model_outputs[0],
+                                        skip_special_tokens=True)
+
+            try:
+                data_dict = fix_string_v1(data_str)
+                data_dict['image_name'] = file_name
+                result_list.append(data_dict)
+
+            except:
+                try:
+                    data_dict = fix_string_v2(data_str)
+                    data_dict['image_name'] = file_name
+                    result_list.append(data_dict)
+                except:
+                    try:
+                        data_dict = fix_string_v3(data_str)
+                        data_dict['image_name'] = file_name
+                        result_list.append(data_dict)
+                    except:
+                        try:
+                            data_dict = fix_string_v4(data_str)
+                            data_dict['image_name'] = file_name
+                            result_list.append(data_dict)
+                        except:
+                            error_list.append(file_path)
+
+        df_result = pd.DataFrame(result_list)
+        print(df_result.shape)
 
     return True
 

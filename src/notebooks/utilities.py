@@ -380,3 +380,96 @@ def print_number_of_trainable_model_parameters(model):
                 \npercentage of trainable model parameters: {100 * trainable_model_params / all_model_params:.2f}%"""
 
 
+def fix_string_v1(data_str):
+
+    keys = ["DATE", "CITY", "STATE", "ZIP"]
+
+    # 1. Fix stray single quotes in values
+    for key in keys:
+        pattern_stray_quotes = r"'{}': '([^']+)''([^']+?)'".format(key)
+        replacement_stray_quotes = r"'{}': '\1\2'".format(key)
+        data_str = re.sub(pattern_stray_quotes,
+                          replacement_stray_quotes, data_str)
+
+    # 2. Fix missing closing quotes
+    for key in keys:
+        pattern_missing_closing = r"'{}': '([^']+?)((?=, '{}':)|(?=, '{}':)|(?=, '{}':)|(?=, '{}':)|$)".format(
+            key, *keys)
+        replacement_missing_closing = r"'{}': '\1'".format(key)
+        data_str = re.sub(pattern_missing_closing,
+                          replacement_missing_closing, data_str)
+
+    # 3. Ensure all values are enclosed in single quotes
+    for i, key in enumerate(keys[:-1]):
+        next_key = keys[i+1]
+        pattern_no_quotes = r"'{}': ([^'{{,\d][^,]*)(?=, '{}'|'.*?':|$)".format(
+            key, next_key)
+        replacement_no_quotes = r"'{}': '\1'".format(key)
+        data_str = re.sub(pattern_no_quotes, replacement_no_quotes, data_str)
+
+    # Replace single quotes with double quotes to make it valid JSON
+    json_str = data_str.replace("'", '"')
+
+    # Load the fixed string
+    data_dict = json.loads('{' + json_str + '}')
+
+    return data_dict
+
+
+def fix_string_v2(data_str):
+
+    keys = ["DATE", "CITY", "STATE", "ZIP"]
+
+    # 1. Fix values that might end prematurely due to a stray single quote.
+    for key in keys:
+        pattern_stray_quotes = r"'{}': ([^']+)'(?=, '{}':|'.*?':|$)".format(
+            key, keys[keys.index(key) + 1] if key != "ZIP" else "ZIP")
+        replacement_stray_quotes = r"'{}': '\1'".format(key)
+        data_str = re.sub(pattern_stray_quotes,
+                          replacement_stray_quotes, data_str)
+
+    # 2. Fix missing opening quotes
+    for i, key in enumerate(keys[:-1]):
+        next_key = keys[i+1]
+        pattern_no_quotes = r"'{}': ([^'{{,\d][^,]*)(?=, '{}'|'.*?':|$)".format(
+            key, next_key)
+        replacement_no_quotes = r"'{}': '\1'".format(key)
+        data_str = re.sub(pattern_no_quotes, replacement_no_quotes, data_str)
+
+    # Convert single quotes to double quotes to form valid JSON string.
+    json_str = data_str.replace("'", '"')
+
+    # Parse the fixed string into a dictionary
+    data_dict = json.loads('{' + json_str + '}')
+
+    return data_dict
+
+
+def fix_string_v3(data_str):
+    # Fixing stray characters within the quotes for ZIP (e.g., '282'0' -> '2820')
+    pattern_stray_chars = r"'ZIP': '([^']+?)'([^',]+?)'"
+    replacement_stray_chars = r"'ZIP': '\1\2'"
+    data_str = re.sub(pattern_stray_chars, replacement_stray_chars, data_str)
+
+    # Convert single quotes to double quotes to form a valid JSON string.
+    json_str = data_str.replace("'", '"')
+
+    # Parse the fixed string into a dictionary
+    data_dict = json.loads('{' + json_str + '}')
+
+    return data_dict
+
+
+def fix_string_v4(data_str):
+    # Fixing apostrophes within the CITY value (e.g., 'Lee's Summit' -> 'Lee\'s Summit')
+    pattern_apostrophe = r"'CITY': '([^']+?)'([^',]+?)'"
+    replacement_apostrophe = r"'CITY': '\1\2'"
+    data_str = re.sub(pattern_apostrophe, replacement_apostrophe, data_str)
+
+    # Convert single quotes to double quotes to form a valid JSON string.
+    json_str = data_str.replace("'", '"')
+
+    # Parse the fixed string into a dictionary
+    data_dict = json.loads('{' + json_str + '}')
+
+    return data_dict
