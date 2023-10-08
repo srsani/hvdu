@@ -26,6 +26,7 @@ from transformers import (AutoModelForSeq2SeqLM,
                           IntervalStrategy)
 
 from notebooks.utilities import (print_number_of_trainable_model_parameters,
+                                 load_data_to_df,
                                  init_json,
                                  fix_string_v1,
                                  fix_string_v2,
@@ -38,15 +39,6 @@ from peft import (LoraConfig,
                   TaskType,
                   PeftModel,
                   PeftConfig)
-
-
-def load_data(df_path):
-
-    df = pd.read_csv(df_path)
-    df.fillna('None', inplace=True)
-    print(f'{df_path} size: {df.shape}')
-
-    return df
 
 
 def tokenize_function(batch, df1, df2, tokenizer):
@@ -93,8 +85,8 @@ def tokenize_function(batch, df1, df2, tokenizer):
 
 def train(config):
 
-    df1 = load_data(config.df1_path)
-    df2 = load_data(config.df2_path)
+    df1 = load_data_to_df(config.df1_path)
+    df2 = load_data_to_df(config.df2_path)
 
     print('Loading ground truth...')
     dataset = load_dataset(config.dataset_name_or_path)

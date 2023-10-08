@@ -473,3 +473,38 @@ def fix_string_v4(data_str):
     data_dict = json.loads('{' + json_str + '}')
 
     return data_dict
+
+
+def load_data_to_df(df_path):
+
+    df = pd.read_csv(df_path)
+    df.fillna('None', inplace=True)
+    print(f'{df_path} size: {df.shape}')
+
+    return df
+
+def get_accuracy_dict (df, keys_path ):
+    
+    dict_list = []
+    error_list = []
+
+    for file_name in df.image_name:
+        try:
+            # get filename and the corresponding json
+            json_name = file_name[file_name.rfind('/')+1: file_name.rfind('.')]
+
+            # covert azure data to a dict
+            dict1 = df[df.image_name == file_name][['DATE', 'CITY','STATE', 'ZIP']].iloc[0].to_dict()
+
+            # open the manually cleaned corresponding json
+            with open(f"{keys_path}/{json_name}.json") as f:
+                dict2 = json.load(f)
+
+            dict_list.append(dict_distance_key(dict1, dict2, file_name))
+
+        except:
+            error_list.append(file_name)
+    len(error_list)
+    
+    return dict_list, error_list
+
