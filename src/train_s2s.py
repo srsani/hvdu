@@ -92,7 +92,7 @@ def train(config):
     print('Loading ground truth...')
     dataset = load_dataset(config.dataset_name_or_path)
 
-    print('Load model and tokenizer...')
+    print(f'Load model and tokenizer for {config.model_name}')
     original_model = AutoModelForSeq2SeqLM.from_pretrained(config.model_name,
                                                            device_map="auto",
                                                            torch_dtype=torch.bfloat16)
@@ -130,7 +130,8 @@ def train(config):
     peft_training_args = TrainingArguments(output_dir=peft_model_path,
                                            auto_find_batch_size=True,
                                            learning_rate=1e-3,
-                                           #     weight_decay=0.01,
+                                           weight_decay=0.0001,
+                                           lr_scheduler_type="cosine",
                                            num_train_epochs=config.num_train_epochs,
                                            logging_steps=1,
                                            #     max_steps=500,
@@ -163,7 +164,7 @@ def train(config):
              dataset=dataset,
              fm_model_name=config.model_name,
              peft_model_path=peft_model_path,
-             gt_keys_path=config.dataset_name_or_path)
+             gt_keys_path=config.dataset_name_or_path,)
 
     return True
 

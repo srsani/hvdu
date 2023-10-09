@@ -34,6 +34,16 @@ Update the following accordingly:
 2. where the model is stored `pretrained_model_name_or_path`
 3. folder path to save the results `save_path`
 
+## Seq2Seq
+
+### train
+
+`python train_s2s.py --config config/train_t5_larg_peft.yaml`
+
+### test
+
+`python test_s2s.py --config ./config/test_t5_peft.yaml`
+
 ## Reference
 
 We have used Donut pre-train script and model in this work
