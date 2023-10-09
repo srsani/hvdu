@@ -4,6 +4,7 @@ Copyright Sohrab Redjai Sani
 MIT License
 """
 import argparse
+import os
 from sconf import Config
 import json
 from tqdm import tqdm
@@ -40,18 +41,24 @@ from notebooks.utilities import (print_number_of_trainable_model_parameters,
 
 def test(df1,
          df2,
-         ground_truth_dataset_path,
+         dataset,
          fm_model_name,
          peft_model_path,
-         gt_keys_path,):
+         gt_keys_path,
+         split_name='test',):
 
     ground_truth_list = []
     result_list = []
     error_list = []
 
+    model_name = peft_model_path[peft_model_path.rindex('/')+1:]
+    result_save_path = f"dataset/result/nist_form/{model_name}/"
+
+    if peft_model_path:
+        os.makedirs(os.path.dirname(result_save_path), exist_ok=True)
+
     print('Loading ground truth...')
-    dataset = load_dataset(ground_truth_dataset_path)
-    dataset_ = dataset['test']
+    dataset_ = dataset[split_name]
 
     peft_model_base = AutoModelForSeq2SeqLM.from_pretrained(fm_model_name,
                                                             device_map="auto",
@@ -66,6 +73,7 @@ def test(df1,
                                               device_map="auto",)
 
     print(print_number_of_trainable_model_parameters(peft_model))
+
     for _, sample in tqdm(enumerate(dataset_), total=len(dataset_)):
         file_path = sample['image'].filename
         file_name = f"{file_path[file_path.rfind('/')+1: ]}"
@@ -163,7 +171,7 @@ def test(df1,
     result_dict['CBA ZIP TEST DATASET'] = np.round(
         df_result_key['zip_accuracy']['mean'], 4)
 
-    with open(f"{peft_model_path}/results.json", "w") as outfile:
+    with open(f"{result_save_path}/results__{split_name}.json", "w") as outfile:
         json.dump(result_dict, outfile, indent=4)
 
 
@@ -179,10 +187,12 @@ if __name__ == "__main__":
     df1 = load_data_to_df(config.df1_path)
     df2 = load_data_to_df(config.df2_path)
 
+    dataset_gt = load_dataset(config.ground_truth_dataset_path)
+
     print('Running Test...')
     test(df1=df1,
          df2=df2,
-         ground_truth_dataset_path=config.ground_truth_dataset_path,
+         dataset=dataset_gt,
          fm_model_name=config.fm_model_name,
          peft_model_path=config.trained_mode_path,
          gt_keys_path=config.gt_keys_path,)
