@@ -39,7 +39,7 @@ from peft import (LoraConfig,
                   TaskType,
                   PeftModel,
                   PeftConfig)
-from test_s2s import test
+from test_s2s import *
 
 
 def tokenize_function(batch, df1, df2, tokenizer):

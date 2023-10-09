@@ -48,6 +48,9 @@ def test(df1,
          result_file_name='result',
          split_name='test',):
 
+    if result_file_name is None:
+        result_file_name = 'result'
+
     ground_truth_list = []
     result_list = []
     error_list = []
@@ -184,9 +187,6 @@ if __name__ == "__main__":
     print(args, left_argv)
     config = Config(args.config)
     config.argv_update(left_argv)
-
-    if config.result_file_name is None:
-        config.result_file_name = 'result'
 
     df1 = load_data_to_df(config.df1_path)
     df2 = load_data_to_df(config.df2_path)
