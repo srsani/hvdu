@@ -45,6 +45,7 @@ def test(df1,
          fm_model_name,
          peft_model_path,
          gt_keys_path,
+         result_file_name='result',
          split_name='test',):
 
     ground_truth_list = []
@@ -171,7 +172,7 @@ def test(df1,
     result_dict['CBA ZIP TEST DATASET'] = np.round(
         df_result_key['zip_accuracy']['mean'], 4)
 
-    with open(f"{result_save_path}/results__{split_name}.json", "w") as outfile:
+    with open(f"{result_save_path}/{result_file_name}__{split_name}.json", "w") as outfile:
         json.dump(result_dict, outfile, indent=4)
 
 
@@ -184,6 +185,9 @@ if __name__ == "__main__":
     config = Config(args.config)
     config.argv_update(left_argv)
 
+    if config.result_file_name is None:
+        config.result_file_name = 'result'
+
     df1 = load_data_to_df(config.df1_path)
     df2 = load_data_to_df(config.df2_path)
 
@@ -195,4 +199,6 @@ if __name__ == "__main__":
          dataset=dataset_gt,
          fm_model_name=config.fm_model_name,
          peft_model_path=config.trained_mode_path,
-         gt_keys_path=config.gt_keys_path,)
+         gt_keys_path=config.gt_keys_path,
+         result_file_name=config.result_file_name,
+         split_name=config.split_name)
