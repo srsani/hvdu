@@ -1,0 +1,9 @@
+
+df1_path: "./dataset/raw/nist/azure_cleaned.csv"
+df2_path: "./dataset/raw/nist/aws_cleaned.csv"
+dataset_name_or_path: "./dataset/training/nist_form"
+model_name: "google/flan-t5-large"
+r_rank: 128
+lora_alpha: 128
+num_train_epochs: 4
+test: True
