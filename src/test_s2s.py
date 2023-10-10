@@ -162,17 +162,17 @@ def test(df1,
 
     fla = df_[df_.total_accuracy == 100].shape[0]/df_.shape[0]
     result_dict = {}
-    result_dict['fla_test'] = np.round(fla, 4)*100
+    result_dict['fla'] = np.round(fla, 4)*100
 
-    result_dict['CBA TOTAL TEST DATASET'] = np.round(
+    result_dict['CBA TOTAL DATASET'] = np.round(
         df_result_key['total_accuracy']['mean'], 4)
-    result_dict['CBA DATE TEST DATASET'] = np.round(
+    result_dict['CBA DATE DATASET'] = np.round(
         df_result_key['date_accuracy']['mean'], 4)
-    result_dict['CBA CITY TEST DATASET'] = np.round(
+    result_dict['CBA CITY DATASET'] = np.round(
         df_result_key['city_accuracy']['mean'], 4)
-    result_dict['CBA STATE TEST DATASET'] = np.round(
+    result_dict['CBA STATE DATASET'] = np.round(
         df_result_key['state_accuracy']['mean'], 4)
-    result_dict['CBA ZIP TEST DATASET'] = np.round(
+    result_dict['CBA ZIP DATASET'] = np.round(
         df_result_key['zip_accuracy']['mean'], 4)
 
     with open(f"{result_save_path}/{result_file_name}__{split_name}.json", "w") as outfile:
